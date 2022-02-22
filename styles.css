@@ -54,7 +54,7 @@ nav {
 }
 
 .nav__content ul li {
-	padding: 3rem 1rem;
+	padding: 3rem .5rem;
 }
 
 .nav__content ul .active {
@@ -110,13 +110,26 @@ nav {
 	background-repeat: no-repeat;
 	width: 130%;
 	height: 74vh;
-	margin-left: 20rem;
+	margin-left: 6%;
 	-moz-transform: skew(20deg, -4deg);
 	-webkit-transform: skew(20deg, -4deg);
 	-o-transform: skew(20deg, -4deg);
 	-ms-transform: skew(20deg, -4deg);
 	transform: skew(20deg, -4deg);
 	border-radius: 4rem;
+}
+.inner-hero h1 {
+	font-weight: 600;
+}
+@media (max-width: 1300px) {
+	.inner-hero h1 {
+		/*font-weight: semibold !important;*/
+		font-weight: 600;
+		font-size: 2.7rem;
+	}
+	.inner-hero h4 {
+		font-size: 2rem;
+	}
 }
 
 .section__hero {
@@ -177,21 +190,24 @@ nav {
 }
 
 .article__one .article__img__content {
-	transform: rotateY(-10deg) skew(-25deg, 0deg);
-	/*transform-style: preserve-3d;*/
+	transform: rotateY(-10deg) skew(-20deg, 0deg);
 	position: absolute;
 	right: -20%;
+	height: 80vh;
+
 }
 
 .article__two .article__img__content {
-	transform: rotateY(10deg) skew(-25deg, 0deg);
-	/*transform-style: preserve-3d;*/
+	transform: rotateY(10deg) skew(-20deg, 0deg);
 	position: relative;
 	left: -50px;
-	height: 500px;
+	/*height: 500px;*/
+	/*height: 100%;*/
+	height: 80vh;
 }
 
 .article__img__content img {
+	border-radius: 3rem;
 	object-fit: contain;
 	box-shadow: 0px 4px 5px grey;
 }
@@ -199,26 +215,31 @@ nav {
 .article__one .article__img__content img {
 	width: 80%;
 	transform-origin: bottom;
-	transform: rotateY(0deg) skew(25deg, 0deg);
+	transform: rotateY(0deg) skew(20deg, 0deg);
 }
 
 .article__two .article__img__content img {
 	width: 125%;
-	/*transform-origin: top;*/
-	transform: rotateY(0deg) skew(25deg, 0deg);
+	transform: rotateY(0deg) skew(20deg, 0deg);
 }
 .patch-img {
 	position: absolute;
-	left: -20%;
+	left: -65vh;
 	top: 25%;
+}
+@media (max-width: 1300px) {
+	.article__two .article__img__content {
+		/*height: 450px*/
+	}
+	.articles article {
+		margin: 0 15rem !important;
+	}
 }
 .articles article {
 	max-width: 30%;
-	/*width: 300px;*/
 	margin: 0 25rem;
 }
 .articles article p {
-	/*width: 570px;*/
 	height: 275px;
 	color: #707070;
 	letter-spacing: 1px;
@@ -229,6 +250,7 @@ nav {
 	transform: translateX(-50%);
 	position: relative;
 	left: 50%;
+	bottom: 100px;
 	outline: none;
 	border: none;
 	padding: 1rem 3rem;
@@ -248,7 +270,7 @@ nav {
 }
 
 .skew_container  {
-	margin: 50px auto;
+	margin: 0 auto;
 	overflow: hidden;
 	padding-bottom: 4%;
 	min-height: 70vh;
@@ -263,7 +285,7 @@ nav {
 }
 
 .skew_container .bg-skew .inner-skew {
-	width: 60%;
+	width: 70%;
 	margin: auto;
 	padding: 5rem 0;
 	transform: skew(0deg, -10deg);
@@ -275,7 +297,7 @@ nav {
 	display: flex;
 }
 .the_article {
-	padding: 5rem;
+	padding: 5rem 3rem;
 }
 .article__1 .the_article button {
 	padding: .7rem 3.5rem;
@@ -300,11 +322,21 @@ nav {
 	transform: skew(5deg, 0deg);
 	max-height: 300px;
 }
-
+/*.select-options {
+	width: 120%;
+}*/
 .select-options button {
 	background-color: #FFF;
 	margin: 0 1rem;
 	border: solid .1px green;
+}
+@media (max-width: 1300px) {
+	.select-options button {
+		margin: 0 .2rem ;
+	}
+	.select-options {
+		width: 120%;
+	}
 }
 
 .select-options .active {
@@ -350,6 +382,7 @@ nav {
 .slider-plants img {
 	width: calc(100% / 4);
 	height: 300px;
+	object-fit: cover;
 }
 
 .info-section {
@@ -383,7 +416,7 @@ nav {
 }
 .info__content ul {
 	margin-bottom: 0;
-	margin-right: 1rem;
+	margin-right: 2rem;
 
 }
 .info__content ul li {
@@ -396,7 +429,7 @@ nav {
 	align-self: center;
 }
 .info__content ul li img {
-	width: 30px;height: 30px;
+	width: 20px;height: 20px;
 	margin-right: 1rem;
 }
 .info__content-datos {
