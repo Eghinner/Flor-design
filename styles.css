@@ -23,8 +23,6 @@ body {
 }
 
 .btn-green {
-	width: 272px;
-	height: 70px;
 	border-radius: 4px;
 	background-color: var(--green);
 	color: #FFF;
@@ -52,6 +50,7 @@ nav {
 	object-fit: contain;
 	align-self: start;
 	margin-left: calc(100% / 12);
+	filter: invert(48%) sepia(18%) saturate(1849%) hue-rotate(55deg) brightness(91%) contrast(82%);
 }
 
 .nav__content ul li {
@@ -122,6 +121,7 @@ nav {
 
 .section__hero {
 	overflow: hidden;
+	background: var(--light-green);
 }
 
 .inner-hero {
@@ -157,6 +157,7 @@ nav {
 	/*overflow: hidden;*/
 	min-height: 400px;
 	padding: 100px 0;
+	background-color: var(--light-green);
 }
 
 .article__two {
@@ -202,7 +203,7 @@ nav {
 }
 
 .article__two .article__img__content img {
-	width: 115%;
+	width: 125%;
 	/*transform-origin: top;*/
 	transform: rotateY(0deg) skew(25deg, 0deg);
 }
@@ -213,10 +214,11 @@ nav {
 }
 .articles article {
 	max-width: 30%;
-	margin: 0 15rem;
+	/*width: 300px;*/
+	margin: 0 25rem;
 }
 .articles article p {
-	width: 570px;
+	/*width: 570px;*/
 	height: 275px;
 	color: #707070;
 	letter-spacing: 1px;
@@ -274,7 +276,10 @@ nav {
 }
 .the_article {
 	padding: 5rem;
-
+}
+.article__1 .the_article button {
+	padding: .7rem 3.5rem;
+	margin-top: 1rem;
 }
 .article-img {
 	max-width: 50%;
@@ -372,8 +377,9 @@ nav {
 	margin: 0 auto;
 	color: #FFF;
 }
-.info__content img {
+.info__content .info__logo {
 	object-fit: cover;
+	filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(351deg) brightness(103%) contrast(101%);
 }
 .info__content ul {
 	margin-bottom: 0;
