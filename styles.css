@@ -49,7 +49,7 @@ a:active {
 		color: #FFF;
 	}
 	.collapse ul {
-		margin: 90px 0 !important;
+		margin: 10px 0 !important;
 	}
 	.navbar-default .navbar-nav>.active>a,
 	.navbar-default .navbar-nav>.active>a:focus,
@@ -153,6 +153,7 @@ nav {
 	top: 10px;
 	grid-row: 1 / 3;
 	background-color: var(--green);
+	/*background-color: ;*/
 	padding: 1rem;
 	width: 44px;
 	height: 44px;
@@ -291,15 +292,15 @@ nav {
 	overflow: hidden;
 	/*max-height: 300px;*/
 	width: 50%;
-	height: 650px;
+	height: 450px;
 	border-radius: 20px;
 }
 
 .article__one .article__img__content {
 	transform: rotateY(-10deg) skew(-20deg, 0deg);
 	position: absolute;
-	right: -23%;
-	height: 80vh;
+	right: -25%;
+	/*height: 80vh;*/
 
 }
 
@@ -309,7 +310,7 @@ nav {
 	left: -50px;
 	/*height: 500px;*/
 	/*height: 100%;*/
-	height: 80vh;
+	/*height: 80vh;*/
 }
 
 .article__img__content img {
