@@ -282,7 +282,7 @@ nav {
 
 .article__two {
 	perspective: 200px;
-	padding: 100px 0;
+	padding: 150px 0;
 	min-height: 400px;
 	margin-bottom: 100px;
 	/*overflow: hidden;*/
@@ -348,6 +348,9 @@ nav {
 	.article__one,.article__two {
 		flex-direction: column;
 		/*perspective: none;*/
+	}
+	.articles .article__img__content {
+		height: 350px;
 	}
 	.article__one {
 		padding-top: 0;
