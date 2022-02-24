@@ -180,11 +180,12 @@ nav {
 
 .hero {
 	position: relative;
-	top: -100px;
+	top: -60px;
 	background-image: url(images/recursos/o_1fkhkt0sol311l3b11pn1s4u847a.jpeg);
 	background-color: var(--green);
 	background-blend-mode: soft-light;
 	background-repeat: no-repeat;
+	background-position: -226px 75px;
 	width: 130%;
 	height: 500px;
 	margin-left: 6%;
