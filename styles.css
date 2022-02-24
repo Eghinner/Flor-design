@@ -297,15 +297,15 @@ nav {
 }
 
 .article__one .article__img__content {
-	transform: rotateY(-10deg) skew(-20deg, 0deg);
+	transform: rotateY(-15deg) skew(-15deg, 0deg);
 	position: absolute;
-	right: -25%;
+	right: -20%;
 	/*height: 80vh;*/
 
 }
 
 .article__two .article__img__content {
-	transform: rotateY(10deg) skew(-20deg, 0deg);
+	transform: rotateY(15deg) skew(-15deg, 0deg);
 	position: relative;
 	left: -50px;
 	/*height: 500px;*/
@@ -323,12 +323,12 @@ nav {
 	width: 75%;
 	height: 150%;
 	transform-origin: bottom;
-	transform: rotateY(0deg) skew(20deg, 0deg);
+	transform: rotateY(15deg) skew(15deg, 0deg);
 }
 
 .article__two .article__img__content img {
 	width: 125%;
-	transform: rotateY(0deg) skew(20deg, 0deg);
+	transform: rotateY(-15deg) skew(15deg, 0deg);
 }
 .patch-img {
 	position: absolute;
@@ -342,7 +342,9 @@ nav {
 	.articles article {
 		margin: 0 15rem !important;
 	}
-
+	.article__one .article__img__content {
+	right: -25%;
+	}
 }
 @media (max-width: 992px) {
 	.article__one,.article__two {
