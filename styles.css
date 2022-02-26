@@ -610,15 +610,15 @@ nav {
         margin-bottom: 40%;
     }
     .articles article h1 {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
+    }
+    .patch-img {
+        left: -450px;
     }
 }
 @media (max-width: 392px) {
     .articles article h1 {
         white-space: normal;
-    }
-    .patch-img {
-        left: -450px;
     }
 }
 
