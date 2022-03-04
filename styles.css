@@ -488,10 +488,12 @@ nav {
     left: -400px;
     top: 25%;
 }
-
 .articles article {
     max-width: 30%;
     margin: 0 25rem;
+}
+.article__two article {
+    margin: 0 20rem;
 }
 
 .articles article h1 {
