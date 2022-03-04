@@ -60,7 +60,7 @@ body {
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
-    background-color: var(--light-green);
+    background-color: #eff6ed;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -300,7 +300,6 @@ nav {
 
 /*________________________________________*/
 .section__hero {
-    /*height: 1605px;*/
     overflow: hidden;
     background: var(--light-green);
     padding-bottom: 10rem;
@@ -881,6 +880,12 @@ nav {
         width: 100%;
         margin-left: 0;
         margin-top: 4rem;
+    }
+}
+@media (max-width: 515px) {
+    .install__article h1 {
+        font-size: 35px;
+        height: auto;
     }
 }
 .slider-plants {
