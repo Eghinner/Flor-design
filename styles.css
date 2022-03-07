@@ -438,7 +438,6 @@ nav {
 .article__two {
     perspective: 50rem;
     padding: 150px 0;
-    margin-bottom: 100px;
 }
 
 .article__onw .articles .article__img__content {
@@ -517,22 +516,22 @@ nav {
     font-weight: 400;
     font-size: 18px;
 }
-
+.content__button {
+    display: flex;
+    align-items: center;
+}
 .articles button {
-    transform: translateX(-50%);
-    position: relative;
-    left: 50%;
-    bottom: 100px;
     background-color: var(--green);
     color: #f8fcf6;
-    width: 272px;
-    height: 70px;
+    padding: 0.5rem 4rem;
     outline: none;
     border: none;
     border-radius: 4px;
     font-size: 18px;
     line-height: 60px;
     font-weight: 500;
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 @media (max-width: 1300px) {
@@ -643,9 +642,7 @@ nav {
 
 .skew_container .bg-skew {
     background: var(--light-green);
-    /*background: red;*/
     text-align: center;
-    /*padding-top: 130px;*/
     padding-top: 9%;
     margin-top: -9%;
     /*margin-top: -20%;*/
