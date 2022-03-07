@@ -37,15 +37,39 @@
                         <h4>600 000 000</h4>
                     </div>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#">PORTADA <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">JARDIN VERTICAL</a></li>
-                        <li><a href="#">TIPOS DE JARDIN</a></li>
-                        <li><a href="#">INSTALACIóN</a></li>
+                        <li class="active">
+                            <a
+                                href="#portada"
+                                aria-controls="portada"
+                                >PORTADA <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#jardin-vertical"
+                                aria-controls="jardin-vertical"
+                                >JARDIN VERTICAL
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#tipos-de-jardin"
+                                aria-controls="tipos-de-jardin"
+                                >TIPOS DE JARDIN
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#instalacion"
+                                aria-controls="instalacion"
+                                >INSTALACIóN
+                            </a>
+                        </li>
                     </ul>
                 </div>
         </nav>
     </header>
-    <section class="section__hero">
+    <section id="portada" class="section__hero">
         <div class="hero--skew">
             <div class="hero__img"></div>
         </div>
@@ -55,7 +79,7 @@
             <button class="text-uppercase wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.3s">quiero saber mas</button>
         </div>
     </section>
-    <section class="articles">
+    <section id="jardin-vertical" class="articles">
         <div class="article__one">
             <article class="wow slideInLeft" data-wow-duration="1.2s" data-wow-delay="0.3s">
                 <h1 class="wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.6s">Jardines Verticales</h1>
@@ -79,25 +103,84 @@
             <button class="wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.6s">Quiero saber mas</button>
         </div>
     </section>
-    <section class="tipos">
+    <section id="tipos-de-jardin" class="tipos">
         <h1>TIPOS DE JARDINES VERTICALES</h1>
         <div class="skew_container">
             <div class="bg-skew">
                 <div class="inner-skew">
-                    <div class="select-options">
-                        <button class="btn">Lorem, ipsum</button>
-                        <button class="btn active">Vertical natural</button>
-                        <button class="btn">Vertical artificial</button>
-                        <button class="btn">Vertical preservados</button>
-                        <button class="btn">Lorem, ipsum</button>
+                    <div class="content_ul">
+                    <ul
+                        class="nav nav-tabs select-options"
+                        role="tablist"
+                    >
+                        <li
+                            role="presentation"
+                            class="btn active"
+                        >
+                            <a
+                            href="#article_1"
+                            aria-controls="article_1"
+                            role="tab"
+                            data-toggle="tab"
+                            >Lorem Ipsum</a>
+                        </li>
+                        <li
+                            role="presentation"
+                            class="btn"
+                        >
+                            <a
+                            href="#article_2"
+                            aria-controls="article_2"
+                            role="tab"
+                            data-toggle="tab"
+                            >Vertical natural</a>
+                        </li>
+                        <li
+                            role="presentation"
+                            class="btn"
+                        >
+                            <a
+                            href="#article_3"
+                            aria-controls="article_3"
+                            role="tab"
+                            data-toggle="tab"
+                            >Vertical preservados</a>
+                        </li>
+                        <li
+                            role="presentation"
+                            class="btn"
+                        >
+                            <a
+                            href="#article_4"
+                            aria-controls="article_4"
+                            role="tab"
+                            data-toggle="tab"
+                            >Vertical preservados</a>
+                        </li>
+                        <li
+                            role="presentation"
+                            class="btn"
+                        >
+                            <a
+                            href="#article_5"
+                            aria-controls="article_5"
+                            role="tab"
+                            data-toggle="tab"
+                            >Lorem ipsum</a>
+                        </li>
+                    </ul>
                     </div>
-                    <div class="article__1">
+                    <div class="tab-content">
+                    <div
+                        role="tabpanel"
+                        class="article__1 tab-pane fade in active"
+                        id="article_1">
                         <div class="the_article">
-                            <h3 class="md-text-left wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.3s">
-                                JARDIN VERTICAL NARTURAL
+                            <h3 class="md-text-left">
+                                JARDIN VERTICAL NARTURAL 1
                             </h3>
-                            <p class="text-justify wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.3s">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Quam aliquid fugit quisquam, ipsum distinctio possimus fuga quia quidem et nesciunt reprehenderit culpa corporis blanditiis necessitatibus animi obcaecati a quaerat quos nobis? Cum corporis beatae itaque nobis esse minus quo dolorum illo mollitia, similique libero laboriosam totam maiores dolorem quos odio.</p>
-                            <button>SABER MAS</button>
+                            <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Quam aliquid fugit quisquam, ipsum distinctio possimus fuga quia quidem et nesciunt reprehenderit culpa corporis blanditiis necessitatibus animi obcaecati a quaerat quos nobis? Cum corporis beatae itaque nobis esse minus quo dolorum illo mollitia, similique libero laboriosam totam maiores dolorem quos odio.</p>
+                            <button>SABER MAS 1</button>
                         </div>
                         <div class="article-img">
                             <div class="skew-img">
@@ -105,11 +188,81 @@
                             </div>
                         </div>
                     </div>
+                    <div
+                        role="tabpanel"
+                        class="article__1 tab-pane fade"
+                        id="article_2">
+                        <div class="the_article">
+                            <h3 class="md-text-left">
+                                JARDIN VERTICAL NARTURAL 2
+                            </h3>
+                            <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Quam aliquid fugit quisquam, ipsum distinctio possimus fuga quia quidem et nesciunt reprehenderit culpa corporis blanditiis necessitatibus animi obcaecati a quaerat quos nobis? Cum corporis beatae itaque nobis esse minus quo dolorum illo mollitia, similique libero laboriosam totam maiores dolorem quos odio.</p>
+                            <button>SABER MAS 2</button>
+                        </div>
+                        <div class="article-img">
+                            <div class="skew-img">
+                                <img src="images/IMG_VIDEO.jpeg" alt="planta">
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        role="tabpanel"
+                        class="article__1 tab-pane fade"
+                        id="article_3">
+                        <div class="the_article">
+                            <h3 class="md-text-left">
+                                JARDIN VERTICAL NARTURAL 3
+                            </h3>
+                            <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Quam aliquid fugit quisquam, ipsum distinctio possimus fuga quia quidem et nesciunt reprehenderit culpa corporis blanditiis necessitatibus animi obcaecati a quaerat quos nobis? Cum corporis beatae itaque nobis esse minus quo dolorum illo mollitia, similique libero laboriosam totam maiores dolorem quos odio.</p>
+                            <button>SABER MAS 3</button>
+                        </div>
+                        <div class="article-img">
+                            <div class="skew-img">
+                                <img src="images/IMG_VIDEO.jpeg" alt="planta">
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        role="tabpanel"
+                        class="article__1 tab-pane fade"
+                        id="article_4">
+                        <div class="the_article">
+                            <h3 class="md-text-left">
+                                JARDIN VERTICAL NARTURAL 4
+                            </h3>
+                            <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Quam aliquid fugit quisquam, ipsum distinctio possimus fuga quia quidem et nesciunt reprehenderit culpa corporis blanditiis necessitatibus animi obcaecati a quaerat quos nobis? Cum corporis beatae itaque nobis esse minus quo dolorum illo mollitia, similique libero laboriosam totam maiores dolorem quos odio.</p>
+                            <button>SABER MAS 4</button>
+                        </div>
+                        <div class="article-img">
+                            <div class="skew-img">
+                                <img src="images/IMG_VIDEO.jpeg" alt="planta">
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        role="tabpanel"
+                        class="article__1 tab-pane fade"
+                        id="article_5">
+                        <div class="the_article">
+                            <h3 class="md-text-left">
+                                JARDIN VERTICAL NARTURAL 5
+                            </h3>
+                            <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Quam aliquid fugit quisquam, ipsum distinctio possimus fuga quia quidem et nesciunt reprehenderit culpa corporis blanditiis necessitatibus animi obcaecati a quaerat quos nobis? Cum corporis beatae itaque nobis esse minus quo dolorum illo mollitia, similique libero laboriosam totam maiores dolorem quos odio.</p>
+                            <button>SABER MAS 5</button>
+                        </div>
+                        <div class="article-img">
+                            <div class="skew-img">
+                                <img src="images/IMG_VIDEO.jpeg" alt="planta">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
-    <section class="install row">
+    <section id="instalacion" class="install row">
         <img class="col-lg-5 col-sm-12" src="images/recursos/o_1fi2238cn1gf21ma8lke15n8cgoa.jpeg" alt="planta">
         <div class="col-lg-4 install__article">
             <h1 class="wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.3s">INSTALACIÓN</h1>

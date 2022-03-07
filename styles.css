@@ -614,23 +614,68 @@ nav {
         white-space: normal;
     }
 }
-
+/*_________*/
 .tipos {
     overflow: hidden;
 }
 
 .tipos h1 {
     margin: 0;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     opacity: .5;
     text-align: center;
     color: var(--green);
-    border-top: 1px var(--green) solid;
+    border-top: .1px #83cd41 solid;
     font-size: 65px;
     line-height: 50px;
     font-weight: 600;
     font-family: "Poppins";
     text-align: center;
+}
+.content_ul {
+    display: flex;
+    align-items: center;
+}
+.content_ul ul {
+    margin: 0 auto;
+}
+.select-options {
+    gap: 20px;
+}
+.tab-content>.active {
+    display: flex;
+}
+.nav-tabs {
+    border-bottom: none;
+}
+.nav-tabs a {
+    color: #000;
+    padding: 6px 12px;
+}
+.select-options .btn {
+    padding: 0;
+    background-color: #FFF;
+    margin: 0 1rem;
+    border: 1px solid #bfdeb3;
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    cursor: default;
+    background-color: var(--green);
+    color: #FFF;
+    border: none;
+}
+.select-options .active {
+    background-color: var(--green);
 }
 
 .skew_container {
@@ -781,25 +826,6 @@ nav {
         width: 40%;
     }
 }
-.select-options {
-    gap: 20px;
-}
-
-.select-options button {
-    background-color: #FFF;
-    margin: 0 1rem;
-    border: 1px solid #bfdeb3;
-    border-radius: 5px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 16px;
-    line-height: 50px;
-    color: #000000;
-    font-weight: 400;
-    font-family: "Poppins";
-    text-align: center;
-}
 
 @media (min-width: 515px) and (max-width: 992px) {
     .article-img {
@@ -807,10 +833,7 @@ nav {
     }
 }
 
-.select-options .active {
-    background-color: var(--green);
-    color: #FFF;
-}
+/*_________________*/
 
 .install {
     display: -webkit-box;
