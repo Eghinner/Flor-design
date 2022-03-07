@@ -496,14 +496,39 @@ nav {
     margin: 0 20rem;
 }
 
+.article__one h1 {
+    margin-left: -8rem;
+    margin-bottom: 3rem;
+}
+.article__one h1 img {
+    margin-right: 1rem;
+    padding-bottom: 5px;
+    height: 45px;
+}
+.article__one h1 span {
+    /*display: flex;*/
+    /*align-items: center;*/
+}
+.article__one h1 span:before {
+    content:" ";
+    height: 1px;
+    width: 150px;
+    background: #55bc00;
+    display: block;
+    position: absolute;
+    left: 1%;
+    /*top: 50%;*/
+    margin-top: 2.5rem ;
+}
+.article__two h1 {
+    margin: 0;
+}
 .articles article h1 {
     white-space: nowrap;
-    margin-bottom: 3rem;
-    /*height: 77px;*/
     font-size: 45px;
     line-height: 50px;
     color: #333333;
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Poppins";
 }
 
@@ -532,6 +557,31 @@ nav {
     font-weight: 500;
     margin: 0 auto;
     margin-bottom: 100px;
+}
+.articles article p {
+    margin-top: 2rem;
+}
+.articles .article__one article h1 span img {
+    margin-bottom: 6px;
+}
+
+/*.articles .article__two article */
+.adorno {
+    display: flex;
+    align-items: center;
+    margin-left: -4rem;
+    margin-top: -1.5rem;
+    width: 40px;height: 40px;
+}
+/*.articles .article__two article */
+.adorno:after {
+    content:" ";
+    height: 1px;
+    width: 130px;
+    background: #55bc00;
+    display: block;
+    position: absolute;
+    margin-left: 4rem ;
 }
 
 @media (max-width: 1300px) {
@@ -682,7 +732,7 @@ nav {
     margin: 0 auto;
     overflow: hidden;
     padding-bottom: 4%;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
 }
 
 .skew_container .bg-skew {
@@ -720,12 +770,14 @@ nav {
 }
 
 .article__1 h3 {
+    margin: 0;
+    text-align: left;
     /*width: 573px;*/
     /*white-space: nowrap;*/
     /*height: 115px;*/
     font-size: 40px;
     letter-spacing: -1px;
-    line-height: 73px;
+    /*line-height: 73px;*/
     color: #333333;
     font-weight: 600;
     font-family: "Poppins";
@@ -859,10 +911,11 @@ nav {
 }
 
 .install__article h1 {
-    height: 115px;
+    margin: 0;
+    /*height: 115px;*/
     font-size: 45px;
     letter-spacing: -1px;
-    line-height: 73px;
+    /*line-height: 73px;*/
     color: #333333;
     font-weight: 600;
     font-family: "Poppins";
@@ -878,12 +931,15 @@ nav {
     font-weight: 400;
 }
 
-.install img {
-    width: 765px;
+.install .install_img {
+    /*border-radius: 10px;*/
+}
+.install .install_img img {
+    /*width: 765px;*/
+    width: 100%;
     height: 524px;
-    border-radius: 10px;
-    /*background-color: #ccab40;*/
     object-fit: cover;
+    border-radius: 1rem;
 }
 
 @media (max-width: 995px) {
@@ -893,7 +949,7 @@ nav {
         margin-bottom: 4rem;
     }
 
-    .install img {
+    .install .install_img {
         width: 100%;
         height: 375px !important;
         object-fit: cover;
@@ -928,6 +984,7 @@ nav {
     object-fit: cover;
 }
 
+/*_____________________*/
 .info-section {
     display: -webkit-box;
     display: -webkit-flex;
@@ -937,7 +994,7 @@ nav {
     margin-top: 20px;
     height: 318px;
     width: 100%;
-    background: linear-gradient(-90deg, rgba(72, 138, 37, 0) 0%, #488a25 50%), url('images/lawn_edger_-_englewood_oh_cropped.yc2YNYi88 copia.jpg');
+    background: linear-gradient(-90deg, rgba(72, 138, 37, 0) 0%, #488a25 60%), url('images/lawn_edger_-_englewood_oh_cropped.yc2YNYi88 copia.jpg');
     background-position: center center;
 }
 
@@ -956,6 +1013,7 @@ nav {
 }
 
 .info__content .info__logo {
+    padding-bottom: 1rem;
     object-fit: cover;
     filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(351deg) brightness(103%) contrast(101%);
 }
@@ -963,7 +1021,6 @@ nav {
 .info__content ul {
     margin-bottom: 0;
     margin-right: 2rem;
-
 }
 
 .info__content ul li {
@@ -978,16 +1035,16 @@ nav {
 
 .info__content ul li a {
     display: flex;
+    gap: 10px;
     flex-wrap: nowrap;
     white-space: nowrap;
-    /*text-overflow:ellipsis;*/
 }
 
 .phone {
-    font-family: "Baloo";
-    font-size: 19px;
-    color: #ffffff;
-    font-weight: 500;
+    /*font-family: "Baloo";*/
+    /*font-size: 19px;*/
+    /*color: #ffffff;*/
+    /*font-weight: 500;*/
 }
 
 .info__content ul li img {
@@ -1021,6 +1078,7 @@ nav {
 .info__content a,
 .info__content a:visited {
     color: #FFF;
+    font-size: 18px;
 }
 
 .info__content ul li a div {
@@ -1069,7 +1127,7 @@ footer {
 }
 
 .footer__content {
-    padding: 1rem;
+    padding: 2rem;
     width: 90%;
     margin: 0 auto;
     display: -webkit-box;
