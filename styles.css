@@ -132,12 +132,12 @@ nav {
 }
 
 .contactanos__icon {
+    border-radius: 5px;
     position: relative;
     top: 10px;
     grid-row: 1 / 3;
     background-color: #83cd41;
-    /*background-color: ;*/
-    padding: 1rem;
+    padding: 1.2rem;
     width: 44px;
     height: 44px;
     justify-self: center;
@@ -156,12 +156,13 @@ nav {
 }
 
 .contactanos h4 {
+    margin-left: -5px;
     grid-column: 2 / 3;
 }
 
 .contactanos p {
     margin-left: 5px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 @media (max-width: 350px) {
