@@ -773,6 +773,9 @@ nav {
     .articles article h1 {
         font-size: 3rem;
     }
+    .article__one h1 img {
+        margin-right: 0;
+    }
     .adorno {
         margin-left: 0;
     }
@@ -783,11 +786,15 @@ nav {
         margin-right: 1rem;
         margin-left: 1rem;
     }
+
 }
 @media (max-width: 392px) {
     .articles article h1 {
          /*font-size: 2.7rem;*/
         white-space: normal;
+    }
+    .article__one h1 img {
+        margin-right: 1rem;
     }
 }
 /*_________*/
