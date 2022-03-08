@@ -621,7 +621,6 @@ nav {
     margin-bottom: 3rem;
 }
 .article__one h1 img {
-    background-color: #fff;
     margin-right: 1rem;
     padding-bottom: 5px;
     height: 45px;
@@ -772,13 +771,17 @@ nav {
         margin-bottom: 40%;
     }
     .articles article h1 {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
     .adorno {
         margin-left: 0;
     }
     .article__one h1 {
         margin-left: 0;
+    }
+    .article__one p {
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
 }
 @media (max-width: 392px) {
