@@ -772,6 +772,7 @@ nav {
     }
     .articles article h1 {
         font-size: 3rem;
+        white-space: normal;
     }
     .article__one h1 img {
         margin-right: 0;
