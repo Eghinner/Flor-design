@@ -679,7 +679,7 @@ nav {
 }
 .articles article p {
     font-family: "Open Sans";
-    width: 570px;
+    max-width: 570px;
     height: 275px;
     letter-spacing: 1px;
     line-height: 28px;
@@ -946,7 +946,7 @@ nav {
 }
 
 .skew_container .bg-skew .inner-skew {
-    width: 70%;
+    /*width: 70%;*/
     margin: auto;
     padding: 5rem 0;
 }
@@ -1028,47 +1028,62 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
 }
-
-@media (max-width: 992px) {
+.article__1 {
+    width: 70%;
+    justify-content: space-around;
+    margin: 10rem auto;
+    column-gap: 10rem;
+}
+.the_article, .article-img {
+    padding: 0;
+}
+@media (max-width: 1440px) {
+    .article__1 {
+        width: 80%;
+    }
+}
+@media (max-width: 1295px) {
+    .article__1 {
+        column-gap: 5rem;
+    }
+}
+@media (max-width: 1200px) {
     .article__1 {
         flex-direction: column;
     }
-
-    .skew-img {
-        width: auto !important;
+    .the_article {
+        padding-bottom: 4rem;
     }
-
+    .article-img {
+        max-width: 100%;
+    }
+}
+@media (max-width: 992px) {
     .article-img {
         max-width: 100%;
         padding: 0;
         margin: 0 auto;
     }
-
-    .the_article {
-        padding: 4rem 0;
-        text-align: center;
+    .skew-img {
+        width: auto;
+        transform: none;
     }
-
+    .skew-img img {
+        transform: none;
+    }
     .skew_container .bg-skew {
         padding-top: 0;
-    }
-
-    .skew_container .bg-skew .inner-skew {
-        width: 90%;
     }
 
     .tipos h1 {
         font-size: 3.7rem;
     }
-
-
     .skew_container .bg-skew {
         padding-top: 0;
         margin-top: 0;
     }
     .article__1 h3 {
         text-align: center;
-        font-size: 3rem;
         margin-bottom: 4rem;
     }
     .article__1 .the_article .adorno {
@@ -1081,15 +1096,14 @@ nav {
         width: 40%;
     }
 }
-
-@media (min-width: 515px) and (max-width: 992px) {
-    .article-img {
-        width: 440px !important;
+@media (max-width: 550px) {
+    .article__1 h3 {
+        font-size: 3rem;
     }
 }
 @media (max-width: 466px) {
     .content_ul .select-options {
-        gap: 0;,
+        gap: 0;
     }
     .content_ul .select-options li {
         margin-bottom: 1rem;
