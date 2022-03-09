@@ -240,7 +240,7 @@ nav {
 @media (max-width: 992px) {
     .navbar-brand {
         margin-bottom: 0;
-        padding: 0;
+        padding: 0.5rem 0rem;
     }
 
     .navbar-header {
@@ -377,7 +377,7 @@ nav {
     }
 
     .navbar-brand img {
-        height: 48px;
+        height: 40px;
     }
 
     .navbar {
@@ -582,20 +582,28 @@ nav {
 
 .article__one {
     perspective: 50rem;
-    padding: 100px 0;
+    padding: 200px 0;
     background-color: var(--light-green);
 }
 
 .article__two {
-    perspective: 50rem;
+    perspective: 40rem;
     padding: 150px 0;
 }
 
-.articles .article__img__content {
+.articles .article__one .article__img__content {
     overflow: hidden;
     width: 50%;
-    height: 450px;
-    border-radius: 20px;
+    height: 600px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 40px;
+}
+.articles .article__two .article__img__content {
+    overflow: hidden;
+    width: 50%;
+    height: 600px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 20px;
 }
 
 .article__one .article__img__content {
@@ -608,7 +616,7 @@ nav {
 .article__two .article__img__content {
     transform: rotateY(10deg) skew(-20deg, 0deg);
     position: relative;
-    left: -50px;
+    left: -75px;
 }
 
 .article__one .article__img__content img {
@@ -634,16 +642,21 @@ nav {
 .patch-img {
     position: absolute;
     left: -400px;
-    top: 25%;
+    top: 50%;
 }
 
 .articles article {
-    max-width: 30%;
+    max-width: 40%;
     margin: 0 25rem;
 }
-
+.article__one article {
+    margin: 0;
+    margin-left: 20vh;
+}
 .article__two article {
-    margin: 0 20rem;
+    /*margin: 0 12rem;*/
+    margin: 0;
+    margin-right: 10vh;
 }
 
 .article__one h1 {
@@ -665,12 +678,13 @@ nav {
 .article__one h1 span:before {
     content: " ";
     height: 1px;
-    width: 10%;
+    width: 25vw;
     background: #55bc00;
     display: block;
     position: absolute;
-    left: 2%;
+    left: 0;
     margin-top: 2.5rem;
+    z-index: -999;
 }
 
 .article__two h1 {
@@ -698,7 +712,7 @@ nav {
 .articles article p {
     font-family: "Open Sans";
     max-width: 570px;
-    height: 275px;
+    /*height: 275px;*/
     letter-spacing: 1px;
     line-height: 28px;
     font-weight: 400;
@@ -761,33 +775,61 @@ nav {
         font-size: 4rem;
 
     }
-
-    .articles article {
-        margin: 0 15rem;
+    .articles .article__one article {
+        /*margin: 0 12rem;*/
+    }
+    .articles .article__two article {
+        /*margin: 0 10rem;*/
     }
 
     .article__one {
         overflow: hidden;
 
     }
-
     .article__one .article__img__content {
         right: -15%;
     }
-
     .article__one h1 span:before {
-        left: -4%;
+        left: 0;
+    }
+    .article__two {
+        perspective: 40rem;
+    }
+    .article__two article h1 {
+        font-size: 3.5rem;
+    }
+    .articles .article__two article {
+        margin-left: 4vw;
     }
 }
 
 @media (max-width: 992px) {
-    .article__one h1 {
+    .article__two .article__img__content img {
+        height: 700px;
+        transform-origin: top;
+    }
+    .articles .article__two {
+        perspective: 80rem;
+    }
+
+    .articles .article__two article {
+        padding-top: 100px;
+    }
+    .articles .article__one .article__img__content,
+    .articles .article__two .article__img__content {
+        width: 100%;
+        height: 400px
+    }
+    .article__two article {
+        margin-top: 100px;
+    }
+
+    .article__one article h1 {
+        font-size: 3.5rem;
+        text-align: left;
         margin-left: 0;
     }
-    .article__one h1 span:before {
-        left: 15%;
-        /*margin-left: 22rem;*/
-    }
+
     .article__one,
     .article__two {
         flex-direction: column;
@@ -799,11 +841,12 @@ nav {
 
     .article__one {
         padding-top: 0;
+        padding-bottom: 100px;
     }
 
     .article__two {
         padding-bottom: 0;
-        padding-top: 0;
+        padding-top: 100px;
     }
 
     .article__one article,
@@ -835,7 +878,7 @@ nav {
         margin-bottom: 5rem;
     }
 
-    .articles article h1 {
+    .article__two article h1 {
         font-size: 3.5rem;
         text-align: center;
 
@@ -844,7 +887,7 @@ nav {
     .patch-img {
         height: 400px;
         left: -200px;
-        top: 10%;
+        top: 25%;
     }
 
     .article__two .article__img__content {
@@ -860,14 +903,19 @@ nav {
 
 @media (max-width: 730px) {
     .article__one h1 span:before {
-        left: 10px;
         height: 0;
+    }
+    .article__one article h1 {
+        text-align: center;
     }
 }
 
 @media (max-width: 612px) {
     .article__two .article__img__content {
-        margin-bottom: 40%;
+        /*margin-bottom: 40%;*/
+    }
+    .articles article {
+        margin: auto 0;
     }
 
     .articles article h1 {
@@ -887,9 +935,9 @@ nav {
         margin-left: 0;
     }
 
-    .article__one p {
-        margin-right: 1rem;
-        margin-left: 1rem;
+    .article__one article p,
+    .article__two article p {
+        margin: 20px 20px 40px 20px;
     }
 }
 
@@ -1100,6 +1148,7 @@ nav {
 
 @media (max-width: 1440px) {
     .article__1 {
+        /*margin: 0 10rem;*/
         width: 80%;
     }
 }
@@ -1168,7 +1217,17 @@ nav {
         width: 40%;
     }
 }
-
+@media (max-width: 612px) {
+    .article__1 {
+        width: 100%;
+    }
+    .article__1 .the_article p {
+        margin: 0 20px;
+    }
+    .article__1 .article-img {
+        width: 80%;
+    }
+}
 @media (max-width: 550px) {
     .article__1 h3 {
         font-size: 3rem;
@@ -1297,7 +1356,22 @@ nav {
         margin-top: 3rem;
     }
 }
-
+@media (max-width: 612px) {
+    .install {
+        margin: 10rem 0;
+        width: 100%;
+    }
+    .install_img {
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+    }
+    .install__article p {
+        margin: 20px;
+    }
+    .install__article {
+        padding: 0;
+    }
+}
 @media (max-width: 420px) {
     .install__article h1 {
         font-size: 3.2rem;
@@ -1412,8 +1486,7 @@ nav {
 }
 
 .info__content button {
-    width: 272px;
-    height: 70px;
+    padding: 0 35px;
     outline: none;
     border: none;
     border-radius: 4px;
@@ -1439,42 +1512,61 @@ nav {
     font-family: 'Baloo 2', cursive;
 }
 
-
-@media (max-width: 1200px) {
+@media (max-width: 1460px) {
     .info__content {
         width: 80%;
     }
 }
-
-@media (max-width: 900px) {
+@media (max-width: 1260px) {
+    .info__content-datos {
+        gap: 10px;
+    }
+}
+@media (max-width: 1150px) {
+    .info__content button {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1160px) {
     .info__content {
         width: 90%;
     }
-
+}
+@media (max-width: 1160px) {
+    .info__content {
+        width: 95%;
+    }
+    .info__content-datos {
+        gap: 5px;
+    }
+    .info__content button {
+        padding: 0 25px;
+    }
+}
+@media (max-width: 940px) {
+    .info__content {
+        width: 99%;
+    }
+}
+@media (max-width: 900px) {
     .info__content a {
         margin-bottom: 1rem;
     }
-
     .info-section {
         height: 100%;
         padding: 3rem;
     }
-
     .info__content {
-        width: 90%;
         flex-direction: column;
     }
-
     .info__content-datos {
         flex-direction: column;
         gap: 1rem;
     }
-
     .info__content ul {
         margin-bottom: 1rem;
         margin-right: 0;
     }
-
     .info__content ul li a div {
         display: inline-block;
     }
