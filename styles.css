@@ -555,12 +555,9 @@ nav {
         transform: none;
     }
 }
-
-
 .articles {
     overflow: hidden;
 }
-
 .articles div {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1182,7 +1179,7 @@ nav {
 
 .install__article p {
     max-width: 573px;
-    height: 276px;
+    /*height: 276px;*/
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 28px;
@@ -1196,19 +1193,17 @@ nav {
     object-fit: cover;
     border-radius: 1rem;
 }
-
-@media (max-width: 995px) {
+@media (max-width: 1200px) {
     .install {
         flex-direction: column;
-        margin: 4rem auto;
+        margin: 10rem auto;
     }
-
     .install .install_img {
         width: 100%;
         object-fit: cover;
     }
-
     .install__article {
+        align-items: center;
         width: 100%;
         margin-left: 0;
         margin-top: 4rem;
