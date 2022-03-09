@@ -345,6 +345,11 @@ nav {
     .contactanos img {
         transform: none;
     }
+    .contactanos p,
+    .contactanos h4 {
+        margin-left: 0;
+
+    }
     .container-fluid {
         border-bottom: solid 1px #218d08;
         padding: 0;
@@ -542,6 +547,7 @@ nav {
         white-space: normal;
     }
     .hero--skew {
+        border-radius: unset;
         transform: none;
         margin-left: 0;
     }
